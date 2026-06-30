@@ -129,6 +129,7 @@ rss:
     - id: "yahoo-finance"
       name: "雅虎财经"
       url: "https://finance.yahoo.com/news/rssindex"
+      enabled: false                  # ✅ 修改点：彻底禁用 Yahoo Finance RSS
 
     # 自定义源示例
     # - id: "custom-feed"
@@ -157,7 +158,7 @@ report:
 
   rank_threshold: 5                   # 排名高亮阈值（影响展示强调，不改变抓取范围）
 
-  max_news_per_keyword: 0             # 每个关键词/标签最大显示数量（0=不限制，仅影响展示裁剪）
+  max_news_per_keyword: 1             # ✅ 修改点：每个关键词/标签最多显示 1 条，配合规则内的 @1 共同控制总条数
 
 
 # ===============================================================
